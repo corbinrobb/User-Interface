@@ -67,9 +67,6 @@ h1, h2, h3, h4, h5 {
 
 
 /* GENERAL STYLES */
-* {
-	/* border: 1px solid red !important; */
-}
 
 h1 {
 	font-size: 5em;
@@ -169,7 +166,7 @@ footer {
 	margin: 5% 0 15%;
 }
 
-footer address p {
+footer address > * {
 	padding: 1%;
 }
 
