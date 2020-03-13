@@ -67,6 +67,9 @@ h1, h2, h3, h4, h5 {
 
 
 /* GENERAL STYLES */
+* {
+	/* border: 1px solid red !important; */
+}
 
 h1 {
 	font-size: 5em;
@@ -74,23 +77,45 @@ h1 {
 
 body {
 	margin: 2% 6%;
+	padding-top: 8vh;
 	max-width: 900px;
 }
 
+/* GOOGLE FONT STYLE FOR STRETCH */
+p {
+	font-family: 'Overpass Mono';
+	font-size: 0.8em;
+}
 
 /* HEADER STYLES */
 header  * {
 	display: inline-block;
 }
 
+header {
+	width: 100vw;
+	position: fixed;
+	height: 8vh;
+	background: grey;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
 header nav {
 	width: 80%;
+	margin-top: 2.5%;
+}
+
+header nav a:hover {
+	color: red;
 }
 
 header img {
 	width: 19%;
 	position: relative;
 	top: 10px;
+	right: 20px;
 }
 
 header nav a {
@@ -104,7 +129,7 @@ header nav a {
 /* HERO STYLES */
 .hero {
 	padding: 2% 2% 6%;
-	margin: 4% auto;
+	margin: 4% 6%;
 	border-bottom: 1px solid black;
 }
 
@@ -131,12 +156,12 @@ header nav a {
 
 /* MAIN SECTION */
 
-main {
-	padding-bottom: 5%;
+section {
 	border-bottom: 1px solid;
+	padding-bottom: 5%;
 }
 
-section > div {
+section div > div {
 	display: inline-block;
 }
 
@@ -146,7 +171,7 @@ section > div {
 	margin: 0;
 }
 
-.middle-img {
+section img {
 	width: 100%;
 }
 
@@ -166,7 +191,7 @@ footer {
 	margin: 5% 0 15%;
 }
 
-footer address > * {
+footer address p {
 	padding: 1%;
 }
 
@@ -180,6 +205,66 @@ footer small {
 	padding-top: 3%;
 	font-size: 0.8em;
 }
+
+
+/* PRODUCT PAGE */
+
+.product-hero {
+	background-image: url(../img/droop-snoot.jpg);
+	height: 50vh;
+	background-position: center top;
+	background-size: cover;
+	border: none;
+	box-shadow: 4px 4px rgba(171, 183, 183, .5);
+}
+
+.product-hero h1 {
+	font-size: 5em;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	padding-top: 3%;
+}
+
+.product-summary {
+	margin-top: 5%;
+}
+
+.product-summary h3 {
+	font-size: 2em;
+}
+
+.bio {
+	padding: 5%;
+}
+
+.bio div {
+	padding: 2%;
+}
+
+.bio img {
+	box-shadow: 4px 4px rgba(171, 183, 183, .8);
+}
+
+.bio > * {
+	display: inline-block;
+	width: 49%;
+}
+
+.bio h3 {
+	font-size: 2em;
+}
+
+iframe {
+	/* margin-top: 10%;
+	margin-left: 15%; */
+	position: relative;
+	margin-top: 10%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+
 
 /* MEDIA QUERY STYLES */
 
